@@ -40,7 +40,7 @@ class SendRconCommand extends Command
         ];
         foreach ($needs as $need) {
             if (!array_key_exists($need, $this->options()) || empty($this->options()[$need])) {
-                $this->error('Please pass all required options');
+                $this->error('Please pass all required options. See --help for all options.');
                 exit(1);
             }
         }
