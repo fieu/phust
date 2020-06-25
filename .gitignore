@@ -1,0 +1,6 @@
+/vendor
+/.idea
+/.vscode
+/.vagrant
+/builds/phust
+.phpunit.result.cache
