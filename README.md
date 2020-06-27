@@ -21,4 +21,4 @@ $ ./phust rcon:send --ip "server.ip" --port "28016" --pass "password" --command 
 
 ## License
 
-Phust is an open-source software licensed under the [MIT license](https://github.com/coef/phust/blob/master/LICENSE.md).
+Phust is an open-source software licensed under the [MIT license](https://github.com/coef/phust/blob/master/LICENSE).
