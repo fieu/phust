@@ -53,6 +53,7 @@ class SendRconCommand extends Command
         ]);
         $client->send($data);
         $result = json_decode($client->receive());
-        echo $result->Message;
+	echo $result->Message;
+	$client->close();
     }
 }
