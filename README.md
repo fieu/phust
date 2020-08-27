@@ -1,8 +1,8 @@
 <p align="center">
-  <h1>phust</h1>
+  <h1>phust ⛏</h1>
 </p>
 
-<h4> <center>Send RCON commands to your Rust server via the command-line</center></h4>
+<h4>Send RCON commands to your Rust server via the command-line</h4>
 
 ### Requirements
 * PHP >= 7.2.5
