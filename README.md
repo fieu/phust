@@ -16,6 +16,11 @@ $ chmod +x phust
 $ ./phust rcon:send --help
 $ ./phust rcon:send --ip "server.ip" --port "28016" --pass "password" --command "status"
 ```
+or
+```sh
+$ php phust rcon:send --help
+$ php phust rcon:send --ip "server.ip" --port "28016" --pass "password" --command "status"
+```
 
 ------
 
