@@ -4,7 +4,9 @@ namespace App\Commands;
 
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
+use WebSocket\BadOpcodeException;
 use WebSocket\Client;
+use WebSocket\TimeoutException;
 
 class SendRconCommand extends Command
 {
@@ -53,7 +55,11 @@ class SendRconCommand extends Command
         ]);
         $client->send($data);
         $result = json_decode($client->receive());
-	echo $result->Message;
-	$client->close();
+        echo $result->Message;
+        try {
+            $client->close();
+        } catch (TimeoutException $e) {
+            die(0);
+        }
     }
 }
