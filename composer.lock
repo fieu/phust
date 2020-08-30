@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10f0670a6f4252a34656a636b944dc48",
+    "content-hash": "4197c74f38060ddb35f30c92866e1788",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -249,7 +249,7 @@
         },
         {
             "name": "illuminate/cache",
-            "version": "v7.26.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
@@ -300,7 +300,7 @@
         },
         {
             "name": "illuminate/config",
-            "version": "v7.26.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -344,7 +344,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v7.26.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -398,7 +398,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v7.26.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -445,7 +445,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.26.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -489,7 +489,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v7.26.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -534,7 +534,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.26.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -589,7 +589,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v7.26.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -651,7 +651,7 @@
         },
         {
             "name": "illuminate/testing",
-            "version": "v7.26.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/testing.git",
@@ -1163,21 +1163,21 @@
         },
         {
             "name": "nunomaduro/laravel-console-summary",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/laravel-console-summary.git",
-                "reference": "1338b803ffd0fa7d8c497c300e751d819d3a5410"
+                "reference": "4766be89ac4c93268d1ad165f7f0281a8c02d450"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/laravel-console-summary/zipball/1338b803ffd0fa7d8c497c300e751d819d3a5410",
-                "reference": "1338b803ffd0fa7d8c497c300e751d819d3a5410",
+                "url": "https://api.github.com/repos/nunomaduro/laravel-console-summary/zipball/4766be89ac4c93268d1ad165f7f0281a8c02d450",
+                "reference": "4766be89ac4c93268d1ad165f7f0281a8c02d450",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^7.0",
-                "illuminate/support": "^7.0",
+                "illuminate/console": "^7.0|^8.0",
+                "illuminate/support": "^7.0|^8.0",
                 "php": "^7.2.5"
             },
             "type": "library",
@@ -1214,7 +1214,7 @@
                 "php",
                 "symfony"
             ],
-            "time": "2020-01-28T17:42:52+00:00"
+            "time": "2020-08-27T10:28:12+00:00"
         },
         {
             "name": "nunomaduro/laravel-console-task",
@@ -3577,6 +3577,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -4373,7 +4374,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2.5"
+        "php": "^7.2.5",
+        "ext-json": "*"
     },
     "platform-dev": []
 }
