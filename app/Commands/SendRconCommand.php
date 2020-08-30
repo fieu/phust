@@ -56,10 +56,6 @@ class SendRconCommand extends Command
         $client->send($data);
         $result = json_decode($client->receive());
         echo $result->Message;
-        try {
-            $client->close();
-        } catch (TimeoutException $e) {
-            die(0);
-        }
+        die(0);
     }
 }
