@@ -40,9 +40,6 @@ jobs:
     - name: Build application
       run: php phust app:build --build-version=$(git rev-parse HEAD) --no-interaction --ansi --verbose
 
-    - name: Test application
-      run: php phust test
-
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2
       with:
