@@ -1,4 +1,4 @@
-name: PHP 
+name: PHP
 
 on:
   push:
@@ -14,9 +14,16 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.0'
+        extensions: json
+        tools: composer
+
     - name: Validate composer.json and composer.lock
       run: composer validate
-      
+
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v2
@@ -29,13 +36,13 @@ jobs:
     - name: Install dependencies
       if: steps.composer-cache.outputs.cache-hit != 'true'
       run: composer install --prefer-dist --no-progress --no-suggest
-    
+
     - name: Build application
       run: php phust app:build --build-version=$(git rev-parse HEAD) --no-interaction --ansi --verbose
-    
+
     - name: Test application
       run: php phust test
-    
+
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2
       with:
