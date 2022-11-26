@@ -5,7 +5,7 @@
 <h4>Send RCON commands to your Rust server via the command-line</h4>
 
 ### Requirements
-* PHP >= 7.4
+* PHP >= 8.1
 
 ### Installation
 Download the latest binary from the [releases](https://github.com/coef/phust/releases) page.
