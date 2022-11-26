@@ -8,7 +8,7 @@
 * PHP >= 8.1
 
 ### Installation
-Download the latest binary from the [releases](https://github.com/coef/phust/releases) page.
+Download the latest binary from the [releases](https://github.com/coef/phust/releases/latest) page.
 
 ### Usage
 ```sh
